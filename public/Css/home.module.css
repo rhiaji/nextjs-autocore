@@ -1,0 +1,42 @@
+.main {
+    justify-content: center;
+    display: flex;
+}
+
+.card {
+    width: 70%;
+    background-color: #1d2432;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cardHeader {
+    text-align: center;
+    border-bottom: 1px solid #4b5563;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
+/* Welcome Section Styles */
+.welcome {
+    padding: 20px;
+    text-align: center;
+}
+
+.welcome p {
+    color: #d1d5db;
+}
+
+.welcomeLink {
+    text-decoration: none; /* Remove the default underline */
+    color: #0077cc; /* Set the link color */
+    transition: color 0.3s; /* Add a smooth color transition */
+}
+
+.welcomeLink:hover {
+    text-decoration: underline; /* Add underline when hovering */
+    color: #ff5500; /* Change color on hover */
+}
