@@ -1,0 +1,65 @@
+.main {
+    justify-content: center;
+    display: flex;
+}
+
+.card {
+    width: 35vw;
+    padding: 20px;
+    margin: 10px;
+}
+
+.cardHeader {
+    text-align: center;
+    border-bottom: 1px solid #4b5563;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
+.cardAccounts {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    overflow-y: scroll;
+    height: 300px;
+}
+
+.cardFooter {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    text-align: center;
+    border-top: 1px solid #000000;
+    margin-top: 10px;
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+.cardFooter button {
+    width: 200px;
+    margin-left: 30%;
+}
+
+.cardStatsBox {
+    background-color: #1d2432;
+    width: calc(50% - 10px); /* 50% width with spacing in between */
+    height: 70px;
+    text-align: center;
+    padding: 5px;
+    margin: 5px; /* Add some spacing between items */
+    border-left: 2px solid gray;
+    border-right: 2px solid gray;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Include padding and borders in the width calculation */
+}
+
+.cardStats {
+    display: flex;
+    flex-wrap: wrap; /* Allow the items to wrap to the next row */
+}
+
+.cardText {
+    height: 20px;
+    padding: 5px;
+}
