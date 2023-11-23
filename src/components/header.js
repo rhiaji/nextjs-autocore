@@ -1,6 +1,6 @@
+'use client'
 import React, { useState } from 'react'
-import Headstyles from '../../public/Css/header.module.css'
-import Ostyles from '../../public/Css/overlay.module.css'
+import style from '../../public/styles/header.module.css'
 
 const Header = () => {
     const [showMenu, setshowMenu] = useState(false)
@@ -15,37 +15,35 @@ const Header = () => {
     }
 
     return (
-        <div className={Headstyles.header}>
+        <div className={style.header}>
             <nav>
-                <div className={Headstyles.logo}>AutoCore</div>
+                <div className={style.logo}>AutoCore</div>
 
-                <button className={Headstyles.hamburger} onClick={() => setshowMenu(true)}>
+                <button className={style.hamburger} onClick={() => setshowMenu(true)}>
                     &#9776;
                 </button>
 
-                <div className={Ostyles.overlay} style={{ width: showMenu ? '100%' : '0' }}>
-                    <a href="javascript:void(0)" className={Ostyles.closebtn} onClick={() => setshowMenu(false)}>
+                <div className={style.overlay} style={{ width: showMenu ? '100%' : '0' }}>
+                    <a href="javascript:void(0)" className={style.closebtn} onClick={() => setshowMenu(false)}>
                         &times;
                     </a>
 
-                    <div className={Ostyles.overlayContent}>
+                    <div className={style.overlayContent}>
                         <a href="/">Home</a>
                         <a href="statistics">Statistics</a>
-                        <a href="calculation">Calculation</a>
                         <a href="farms">Farms</a>
                         <a href="subscribe">Subscribe</a>
                     </div>
                 </div>
 
-                <div className={Headstyles.links}>
+                <div className={style.links}>
                     <a href="/">Home</a>
                     <a href="statistics">Statistics</a>
-                    <a href="calculation">Calculation</a>
                     <a href="farms">Farms</a>
                     <a href="subscribe">Subscribe</a>
                 </div>
 
-                <div className={Headstyles.login}>
+                <div className={style.login}>
                     <button onClick={login}>Login</button>
                 </div>
             </nav>

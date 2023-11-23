@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -13,16 +13,10 @@ body {
 }
 
 body {
-    font-family: "IBM Plex Serif", serif;
+    font-family: 'IBM Plex Serif', serif;
     color: white;
     margin: 0;
     letter-spacing: 1px;
     line-height: 25px;
-    background-color: #111827;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    width: 70%;
+    background-color: #00131c;
 }

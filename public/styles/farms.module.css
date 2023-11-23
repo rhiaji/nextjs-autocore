@@ -1,0 +1,18 @@
+.main {
+    justify-content: center;
+    display: flex;
+    width: 100vw;
+    height: calc(100vh - 60px);
+}
+
+.accounts {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    border-right: 1px solid #786a2f;
+}
+
+.content {
+    display: flex;
+    width: 85%;
+}

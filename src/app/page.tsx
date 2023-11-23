@@ -1,7 +1,7 @@
-"use client"
-import React from "react"
-import Header from "../../public/Components/header"
-import HomeContent from "../../public/Components/home"
+'use client'
+import React from 'react'
+import Header from '../components/header'
+import HomeContent from '../components/home'
 
 export default function HomePage() {
     return (

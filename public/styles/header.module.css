@@ -1,0 +1,131 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 60px;
+    background-color: #002e34;
+    border-bottom: 1px solid #786a2f;
+}
+
+.header nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 1000px;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #f0482e;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+}
+
+.login button {
+    width: 50px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    font-size: 15px;
+    color: white;
+}
+
+.login button:hover {
+    border-radius: 10px;
+    color: #f0482e;
+    cursor: pointer;
+}
+
+/* Styles for Hamburger Menu */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    margin-right: 10%;
+}
+
+.links a:hover {
+    color: #f0482e;
+}
+
+@media screen and (max-width: 756px) {
+    .logo {
+        margin-left: 20px;
+    }
+    .header nav {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .links {
+        display: none;
+    }
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlayContent {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f0482e;
+}
+
+.overlay .active {
+    color: #f0482e;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}

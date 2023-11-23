@@ -1,15 +1,14 @@
-import React from "react"
-import Hstyles from "../../public/Css/home.module.css"
+import style from '../../public/styles/home.module.css'
 
 const homeContent = () => {
     return (
-        <div className={Hstyles.main}>
-            <div className={Hstyles.card}>
-                <div className={Hstyles.cardHeader}>
+        <div className={style.main}>
+            <div className={style.card}>
+                <div className={style.cardHeader}>
                     <h3>Time remaining for next claim</h3>
                     <span id="countdown"></span>
                 </div>
-                <div className={Hstyles.welcome}>
+                <div className={style.welcome}>
                     <h2>Welcome to AutoCore</h2>
                     <br></br>
                     <p>Your ultimate destination for Terracore Game Bot Services.</p>
@@ -20,20 +19,20 @@ const homeContent = () => {
                     <p>Feel free to explore the official Terracore Game and become a part of our vibrant community on the</p>
                     <br />
                     <p>
-                        <a className={Hstyles.welcomeLink} href="https://www.terracoregame.com/" target="_blank">
+                        <a className={style.welcomeLink} href="https://www.terracoregame.com/" target="_blank">
                             Official Terracore Game website
                         </a>
                         <br></br>
                         <br></br>
-                        <a className={Hstyles.welcomeLink} href="https://discord.gg/7fGrsr3ZBx/" target="_blank">
+                        <a className={style.welcomeLink} href="https://discord.gg/7fGrsr3ZBx/" target="_blank">
                             Official Discord
                         </a>
                     </p>
                     <br></br>
                     <p>
                         Crafted with dedication by
-                        <a className={Hstyles.welcomeLink} href="https://peakd.com/@rhiaji" target="_blank">
-                            {" "}
+                        <a className={style.welcomeLink} href="https://peakd.com/@rhiaji" target="_blank">
+                            {' '}
                             Rhiaji
                         </a>
                     </p>

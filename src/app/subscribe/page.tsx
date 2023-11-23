@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import Header from '../../../public/Components/header'
+import Header from '../../components/header'
 
 export default function subscribePage() {
     return (

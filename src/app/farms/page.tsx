@@ -1,7 +1,6 @@
-'use client'
 import React from 'react'
-import Header from '../../../public/Components/header'
-import FarmsContent from '../../../public/Components/farms'
+import Header from '../../components/header'
+import FarmsContent from '../../components/farms'
 
 export default function farmsPage() {
     return (
